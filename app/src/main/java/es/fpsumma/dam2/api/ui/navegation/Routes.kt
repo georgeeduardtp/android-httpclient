@@ -12,4 +12,6 @@ object Routes {
         return "tareas/detalle/$id"
     }
 
+    const val TAREA_CONTENT = "tareas/content"
+
 }

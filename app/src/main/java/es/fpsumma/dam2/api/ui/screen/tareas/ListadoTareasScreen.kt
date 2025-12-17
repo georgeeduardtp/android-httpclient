@@ -13,6 +13,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.automirrored.filled.NoteAdd
 import androidx.compose.material.icons.outlined.Delete
+import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
@@ -67,7 +68,12 @@ fun ListadoTareasScreen(
             )
         }
     ) { innerPadding ->
-
+        Button(
+            onClick = { navController.navigate(Routes.TAREA_ADD) },
+            modifier = modifier.padding(8.dp)
+        ) {
+            Text("Listado tareas content")
+        }
 
         tareas?.let {
 
